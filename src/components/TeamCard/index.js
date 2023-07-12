@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 const TeamCard = props => {
-  const {teamData} = props
-  const {name, id, teamImageUrl} = teamData
+  const {teamsData} = props
+  const {name, id, teamImageUrl} = teamsData
 
   return (
     <Link to={`/team-matches/${id}`} className="link-item">
