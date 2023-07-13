@@ -1,8 +1,14 @@
 /* Write your CSS here */
-.team-matches-route-container {
+.app-team-matches-route-container {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .rcb {
   background: linear-gradient(to top, #1e293b, #a4261d);

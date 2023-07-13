@@ -16,7 +16,7 @@ class LatestMatch extends Component {
       umpires,
       venue,
       result,
-    } = LatestMatch
+    } = latestMatch
     return (
       <div className="latest-match-card-container">
         <h1 className="latest-match-heading">Latest Matches</h1>

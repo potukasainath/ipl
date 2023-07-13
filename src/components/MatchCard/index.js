@@ -4,8 +4,8 @@ import {Component} from 'react'
 
 class MatchCard extends Component {
   render() {
-    const {MatchData} = this.props
-    const {result, competingTeam, competingTeamLogo, matchStatus} = MatchData
+    const {matchData} = this.props
+    const {result, competingTeam, competingTeamLogo, matchStatus} = matchData
 
     return (
       <li className={`match-card ${matchStatus}`}>

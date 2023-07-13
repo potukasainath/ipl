@@ -1,9 +1,9 @@
 // Write your code here
+import './index.css'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import {Component} from 'react'
 import TeamCard from '../TeamCard'
-import './index.css'
 
 class Home extends Component {
   state = {
@@ -29,16 +29,16 @@ class Home extends Component {
   renderTeamsList = () => {
     const {teamsData} = this.state
     return (
-      <ul className="teams-list-items">
-        {teamsData.map(eachteam => (
-          <TeamCard key={eachteam.id} teamsData={eachteam} />
+      <ul className="team-list-items">
+        {teamsData.map(team => (
+          <TeamCard key={team.id} teamData={team} />
         ))}
       </ul>
     )
   }
 
   renderLoader = () => (
-    <div data-testid="loader" className="loader-container">
+    <div testid="loader" className="loader-container">
       <Loader type="Rings" color="#00BFFF" height={80} width={80} />
     </div>
   )
